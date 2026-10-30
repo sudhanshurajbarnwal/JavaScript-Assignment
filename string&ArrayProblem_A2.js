@@ -14,11 +14,13 @@ reverse("hello")
 // TASK 2
 function checkPalidrone(str){
     let output="";
-    for(let i=str.length; i>0; i--){
+    for(let i=str.length-1; i>=0; i--){
         output+=str[i]
     }
     if(str==output){
         console.log("true")
+    } else{
+        console.log("false")
     }
 }
 
